@@ -1,6 +1,6 @@
 {
   "name": "jm-tag",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "tagged object",
   "main": "./lib/index",
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/jm-root/jm-tag",
   "dependencies": {
-    "jm-event": "^0.0.1"
+    "jm-event": "^0.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

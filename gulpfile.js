@@ -60,5 +60,5 @@ gulp.task('doc', function (cb) {
         .pipe(jsdoc(cb));
 });
 
-gulp.task('default', gulpSequence('clean', ['es6to5']));
+gulp.task('default', gulpSequence('clean', ['pack']));
 

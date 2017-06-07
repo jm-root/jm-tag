@@ -182,9 +182,20 @@ let moduleTag = ($, name = 'tag') => {
     };
 };
 
-export default {
+
+let $ = {
     TagObject: TagObject,
     enableTag: enableTag,
     disableTag: disableTag,
     moduleTag: moduleTag,
 };
+
+if (typeof global !== 'undefined' && global) {
+    global.jm || (global.jm = {});
+    let jm = global.jm;
+    if (!jm.TagObject) {
+        for (let key in $) jm[key] = $[key];
+    }
+}
+
+export default $;
